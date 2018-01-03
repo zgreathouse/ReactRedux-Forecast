@@ -1,8 +1,23 @@
+import _ from 'lodash';
 import React from 'react';
+import {
+  Sparklines,
+  SparklinesLine,
+  SparklinesReferenceLine } from 'react-sparklines';
 
-const DataChart = () => {
+const average = (data) => {
+  return _.round(_.sum(data) / data.length);
+}
+
+const DataChart = (props) => {
   return (
-    <div>DataChart</div>
+    <div>
+        <Sparklines height={120} width={180} data={props.data}>
+          <SparklinesLine color={props.color} />
+          <SparklinesReferenceLine type="avg" />
+          <div>{`${average(props.data)}${props.degreeSymbol}`} {props.units}</div>
+        </Sparklines>
+    </div>
   )
 }
 
