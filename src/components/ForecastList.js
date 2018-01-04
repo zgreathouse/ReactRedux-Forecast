@@ -11,7 +11,7 @@ import GoogleMap from './GoogleMap';
 class ForecastList extends Component  {
   renderWeather(cityData) {
     const name = cityData.city.name;
-    const temps = _.map(cityData.list.map(forecast => forecast.main.temp), (temp) => temp - 273);
+    const temps = _.map(cityData.list.map(forecast => forecast.main.temp), (temp) => temp - 273.15);
     const pressures = cityData.list.map(forecast => forecast.main.pressure);
     const humidities = cityData.list.map(forecast => forecast.main.humidity);
     const { lon, lat } = cityData.city.coord;
