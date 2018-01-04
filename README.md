@@ -1,10 +1,10 @@
-#ReactRedux-Forecast
+# ReactRedux-Forecast
 
 The app allows you to search any city in the US and get a 5 day forecast which includes averages for temperature, pressure, and humidity. A google maps display of the city is also provided.
 
 ![Example](/assets/example.gif)
 
-###Technologies
+### Technologies
 - React
 - Redux
 - Axios
