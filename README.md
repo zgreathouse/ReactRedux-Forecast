@@ -14,5 +14,6 @@ The app allows you to search any city in the US and get a 5 day forecast which i
 - Babel
 - CSS
 - Lodash
+- GoogleMaps API
 
 The initial boilerplate for React and Redux was a forked repository from here: https://github.com/StephenGrider/ReduxSimpleStarter
